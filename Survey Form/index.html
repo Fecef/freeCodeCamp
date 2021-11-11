@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Your MMO Survey</title>
+</head>
+
+<body>
+    <div>
+        <h1 id="title">Your MMO Survey</h1>
+        <p id="description">Tell us which MMO you have played!</p>
+    </div>
+
+    <form id="survey-form" action="#" method="get">
+        <div>
+            <label id="name-label" for="name">Name</label>
+            <input type="text" name="name" id="name" autocomplete="off" placeholder="Your name" required>
+        </div>
+
+        <div>
+            <label id="email-label" for="email">E-mail</label>
+            <input type="email" name="email" id="email" autocomplete="off" placeholder="Your e-mail" required>
+        </div>
+
+        <div>
+            <label id="number-label" for="age">Age (Optional)</label>
+            <input type="number" name="number" id="number" min="18" max="100" autocomplete="off" placeholder="Age"
+                required>
+        </div>
+
+        <div>
+            <label for="dropdown">How did you find us?</label>
+            <select name="dropdown" id="dropdown" required>
+                <option value="" selected disabled>Select</option>
+                <option value="friends">Friends</option>
+                <option value="google">Google</option>
+                <option value="youtube">Youtube</option>
+                <option value="tv">TV</option>
+                <option value="magazine">Magazine</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+
+        <div>
+            <p>How much do you like the genre?</p>
+
+            <input type="radio" name="user-rating" id="favorite" value="favorite" checked>
+            <label for="favorite">It's my favorite!</label>
+            <input type="radio" name="user-rating" id="not-favorite" value="not-favorite">
+            <label for="not-favorite"> It's not my favorite, but I have fun!</label>
+            <input type="radio" name="user-rating" id="alittle" value="alittle">
+            <label for="alittle"> A little bit.</label>
+        </div>
+
+        <div>
+            <p>Mark the MMO you played already!</p>
+
+            <input type="checkbox" name="mmo" id="mu" value="mu">
+            <label for="mu">Mu Online</label>
+            <input type="checkbox" name="mmo" id="tibia" value="tibia">
+            <label for="tibia">Tibia</label>
+            <input type="checkbox" name="ragnarok" id="ragnarok" value="ragnarok">
+            <label for="ragnarok">Ragnarok</label>
+            <input type="checkbox" name="wow" id="wow" value="wow">
+            <label for="wow">World of Warcraft</label>
+            <input type="checkbox" name="lineage" id="lineage" value="lineage">
+            <label for="lineage">Lineage</label>
+            <input type="checkbox" name="aion" id="aion" value="aion">
+            <label for="aion">Aion</label>
+            <input type="checkbox" name="guildwars" id="guildwars" value="guildwars">
+            <label for="guildwars">Guild Wars</label>
+            <input type="checkbox" name="flyff" id="flyff" value="flyff">
+            <label for="flyff">Fly For Fun</label>
+            <input type="checkbox" name="runescape" id="runescape" value="runescape">
+            <label for="runescape">Runescape</label>
+            <input type="checkbox" name="pristontale" id="pristontale" value="pristontale">
+            <label for="pristontale">Priston Tale</label>
+            <input type="checkbox" name="lordoftherings" id="lordoftherings" value="lordoftherings">
+            <label for="lordoftherings">Lord of The Rings</label>
+        </div>
+
+        <div>
+            <p>Share your experience with us!</p>
+            <textarea name="comment" id="comment" cols="80" rows="10"
+                placeholder="Enter your comment here..."></textarea>
+        </div>
+
+        <div>
+            <button id="submit" type="submit">Enviar</button>
+        </div>
+    </form>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>

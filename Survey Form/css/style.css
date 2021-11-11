@@ -1,0 +1,15 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+body {
+  background-image: url(/img/background.png);
+  background-repeat: no-repeat;
+  background-size: 110%;
+}
+
+#comment {
+  resize: none;
+}
