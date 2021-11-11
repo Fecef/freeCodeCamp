@@ -1,2 +1,2 @@
-# Responsive-Web-Design-Projects
-freeCampCode HTML/CSS Projects
+# freeCodeCamp
+freeCodeCamp HTML/CSS Projects
