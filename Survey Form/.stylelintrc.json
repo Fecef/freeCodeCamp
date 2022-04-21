@@ -46,7 +46,7 @@
     "declaration-block-no-redundant-longhand-properties": true,
     "declaration-block-single-line-max-declarations": 3,
     "selector-attribute-quotes": "always",
-    "selector-max-class": 2,
+    "selector-max-class": 4,
     "selector-max-compound-selectors": 3,
     "selector-max-id": 1,
     "selector-max-pseudo-class": 2,

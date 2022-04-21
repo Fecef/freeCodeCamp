@@ -1,3 +1,4 @@
+/* stylelint-disable selector-class-pattern */
 :root {
   font-size: 16px;
 }
@@ -6,6 +7,48 @@
 *::after,
 *::before {
   box-sizing: border-box;
-  size: 2px;
 }
 
+main {
+  max-width: 978px;
+  margin: 0 auto;
+}
+
+.intro {
+  text-align: center;
+}
+
+.survey {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 80%;
+  margin: 0 auto;
+  gap: 1vw;
+
+  .fieldset-1 {
+    flex: 1;
+
+    .fieldset-1__input {
+      width: 100%;
+    }
+  }
+}
+
+.favorite-mmo {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  height: 10vh;
+  gap: 2vw;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+}

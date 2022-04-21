@@ -5,69 +5,141 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css/grid.css" />
   <link rel="stylesheet" href="css/style.css" />
   <title>Your MMO Survey</title>
 </head>
 
 <body>
-  <!-- Introdução -->
-  <h1 id="title">GLOBAL MMO SURVEY</h1>
-  <p id="description">Tell us which MMO played a role in your life!</p>
+  <main>
+    <!-- Introdução -->
+    <div class="intro">
+      <h1 id="title">GLOBAL MMO SURVEY</h1>
+      <br>
+      <p id="description">Tell us which MMO played a role in your life!</p>
+    </div>
 
-  <!-- Questionário -->
-  <form id="survey-form" action="#" autocomplete="off">
-    <fieldset>
-      <legend>Put your informations here!</legend>
-      <label for="name" id="name-label">Name</label>
-      <input type="text" name="name" id="name" placeholder="Nome Completo" required />
-      <label for="email" id="email-label">E-mail</label>
-      <input type="email" name="email" id="email" placeholder="Email" required />
-      <label for="number" id="number-label">Number</label>
-      <input type="number" name="number" id="number" min="18" max="130" placeholder="Age" required />
+    <!-- Questionário -->
+    <section>
+      <form class="survey" id="survey-form" action="#" autocomplete="off">
 
-      <label for="dropdown">You consider yourself as a...</label>
-      <select name="dropdown" id="dropdown">
-        <option value="super-casual">Super Casual</option>
-        <option value="casual">Casual</option>
-        <option value="hardcore">Hardcore</option>
-        <option value="no-life">No Life</option>
-      </select>
+        <fieldset class="fieldset-1">
+          <legend>You are...</legend>
 
-      <p>Which one is your favorite MMO?</p>
-      <label for="ragnarok">Ragnarok</label>
-      <input type="radio" name="mmo" id="ragnarok" value="ragnarok" />
-      <label for="tibia">Tibia</label>
-      <input type="radio" name="mmo" id="tibia" value="tibia" />
-      <label for="mu">Mu Online</label>
-      <input type="radio" name="mmo" id="mu" value="mu" />
-      <label for="ultima">Ultima Online</label>
-      <input type="radio" name="mmo" id="ultima" value="ultima" />
-      <label for="runescape">Runescape</label>
-      <input type="radio" name="mmo" id="runescape" value="runescape" />
-      <label for="world-of-warcraft">World of Warcraft</label>
-      <input type="radio" name="mmo" id="world-of-warcraft" value="world-of-warcraft" />
-      <label for="lineage-2">Lineage 2</label>
-      <input type="radio" name="mmo" id="lineage-2" value="lineage-2" />
+          <div class="row">
+            <div class="col-25">
+              <label for="name" id="name-label">Name:</label>
+            </div>
+            <div class="col-75">
+              <input class="fieldset-1__input" type="text" name="name" id="name" placeholder="Nome Completo" required />
+            </div>
+          </div>
 
-      <p>How did you find us?</p>
-      <label for="facebook">Facebook</label>
-      <input type="checkbox" name="facebook" id="facebook" value="facebook">
-      <label for="twitter">Twitter</label>
-      <input type="checkbox" name="twitter" id="twitter" value="twitter">
-      <label for="whatsapp">Whatsapp</label>
-      <input type="checkbox" name="whatsapp" id="whatsapp" value="whatsapp">
-      <label for="friend">Friend</label>
-      <input type="checkbox" name="friend" id="friend" value="friend">
+          <div class="row">
+            <div class="col-25">
+              <label for="email" id="email-label">E-mail:</label>
+            </div>
+            <div class="col-75">
+              <input class="fieldset-1__input" type="email" name="email" id="email" placeholder="Email" required />
+            </div>
+          </div>
 
-      <label for="review">Comment</label>
-      <textarea name="review" id="review" cols="50" rows="5"></textarea>
+          <div class="row">
+            <div class="col-25">
+              <label for="number" id="number-label">Age:</label>
+            </div>
+            <div class="col-75">
+              <input class="fieldset-1__input" type="number" name="number" id="number" min="18" max="130"
+                placeholder="Age" required />
+            </div>
+          </div>
+        </fieldset>
 
-      <button id="submit" type="submit" onclick="alert('Obrigado por participar!')">
-        Enviar
-      </button>
-    </fieldset>
-  </form>
+        <fieldset class="fieldset-2">
+          <legend>Your favorite MMO is...</legend>
+
+          <div class="favorite-mmo">
+            <div>
+              <div>
+                <input type="radio" name="mmo" id="ragnarok" value="ragnarok" />
+                <label for="ragnarok">Ragnarok</label>
+              </div>
+
+              <div>
+                <input type="radio" name="mmo" id="tibia" value="tibia" />
+                <label for="tibia">Tibia</label>
+              </div>
+            </div>
+
+            <div>
+              <div>
+                <input type="radio" name="mmo" id="mu" value="mu" />
+                <label for="mu">Mu Online</label>
+              </div>
+
+              <div>
+                <input type="radio" name="mmo" id="everquest" value="everquest" />
+                <label for="everquest">Everquest</label>
+              </div>
+            </div>
+
+            <div>
+              <div>
+                <input type="radio" name="mmo" id="world-of-warcraft" value="world-of-warcraft" />
+                <label for="world-of-warcraft">World of Warcraft</label>
+              </div>
+
+              <div>
+                <input type="radio" name="mmo" id="lineage-2" value="lineage-2" />
+                <label for="lineage-2">Lineage 2</label>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+
+
+
+        <!-- <div>
+            <div>
+              <label for="dropdown">You consider yourself as a...</label>
+            </div>
+            <div>
+              <select name="dropdown" id="dropdown">
+                <option value="super-casual">Super Casual</option>
+                <option value="casual">Casual</option>
+                <option value="hardcore">Hardcore</option>
+                <option value="no-life">No Life</option>
+              </select>
+            </div>
+          </div>
+
+          <div>
+            <p>How did you find us?</p>
+
+            <label for="facebook">Facebook</label>
+            <input type="checkbox" name="facebook" id="facebook" value="facebook">
+            <label for="twitter">Twitter</label>
+            <input type="checkbox" name="twitter" id="twitter" value="twitter">
+            <label for="whatsapp">Whatsapp</label>
+            <input type="checkbox" name="whatsapp" id="whatsapp" value="whatsapp">
+            <label for="friend">Friend</label>
+            <input type="checkbox" name="friend" id="friend" value="friend">
+          </div>
+
+          <div>
+            <div>
+              <label for="review">Comments</label>
+            </div>
+            <textarea name="review" id="review" cols="50" rows="5"></textarea>
+          </div>
+
+          <div>
+            <button id="submit" type="submit" onclick="alert('Obrigado por participar!')">
+              Enviar
+            </button>
+          </div> -->
+      </form>
+    </section>
+  </main>
   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 

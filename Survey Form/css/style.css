@@ -1,3 +1,4 @@
+/* stylelint-disable selector-class-pattern */
 :root {
   font-size: 16px;
 }
@@ -7,6 +8,65 @@
 *::before {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  size: 2px;
+}
+
+main {
+  max-width: 978px;
+  margin: 0 auto;
+}
+
+.intro {
+  text-align: center;
+}
+
+.survey {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 80%;
+  margin: 0 auto;
+  gap: 1vw;
+}
+
+.survey .fieldset-1 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.survey .fieldset-1 .fieldset-1__input {
+  width: 100%;
+}
+
+.favorite-mmo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 10vh;
+  gap: 2vw;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
 }
 /*# sourceMappingURL=style.css.map */
