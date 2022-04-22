@@ -15,11 +15,26 @@ main {
   margin: 0 auto;
 }
 
+.col-25 {
+  float: left;
+  width: 25%;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+}
+
 .intro {
   text-align: center;
 }
 
-.survey {
+#survey-form {
+  width: 80%;
+  margin: 50px auto;
+}
+
+#survey-form .section-1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -30,22 +45,27 @@ main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 80%;
-  margin: 0 auto;
-  gap: 1vw;
+  gap: 10px;
 }
 
-.survey .fieldset-1 {
+#survey-form .section-1 .fieldset-1 {
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
-.survey .fieldset-1 .fieldset-1__input {
+#survey-form .section-1 .fieldset-1 .fieldset-1__input {
+  margin-bottom: 10px;
   width: 100%;
 }
 
-.favorite-mmo {
+#survey-form .section-1 .fieldset-2 {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+#survey-form .section-1 .fieldset-2 .favorite-mmo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -53,20 +73,48 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 10vh;
-  gap: 2vw;
+  height: 100px;
 }
 
-.col-25 {
-  float: left;
-  width: 25%;
+#survey-form .section-2,
+#survey-form .section-3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px auto;
+  height: 100px;
 }
 
-.col-75 {
-  float: left;
-  width: 75%;
+#survey-form .section-3 p {
+  text-align: center;
+}
+
+#survey-form .section-4 {
+  margin: 50px auto 20px;
+  text-align: center;
+}
+
+#survey-form .section-4 label {
+  display: block;
+  margin-bottom: 20px;
+}
+
+#survey-form .section-4 textarea {
+  resize: none;
+}
+
+#survey-form .section-5 {
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */

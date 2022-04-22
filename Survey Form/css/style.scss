@@ -14,35 +14,6 @@ main {
   margin: 0 auto;
 }
 
-.intro {
-  text-align: center;
-}
-
-.survey {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  width: 80%;
-  margin: 0 auto;
-  gap: 1vw;
-
-  .fieldset-1 {
-    flex: 1;
-
-    .fieldset-1__input {
-      width: 100%;
-    }
-  }
-}
-
-.favorite-mmo {
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
-  height: 10vh;
-  gap: 2vw;
-}
-
 .col-25 {
   float: left;
   width: 25%;
@@ -51,4 +22,74 @@ main {
 .col-75 {
   float: left;
   width: 75%;
+}
+
+.intro {
+  text-align: center;
+}
+
+#survey-form {
+  width: 80%;
+  margin: 50px auto;
+
+  .section-1 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 10px;
+
+    .fieldset-1 {
+      flex-grow: 1;
+
+      .fieldset-1__input {
+        margin-bottom: 10px;
+        width: 100%;
+      }
+    }
+
+    .fieldset-2 {
+      flex-grow: 1;
+
+      .favorite-mmo {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-items: center;
+        height: 100px;
+      }
+    }
+  }
+
+  .section-2,
+  .section-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+    height: 100px;
+  }
+
+  .section-3 {
+    p {
+      text-align: center;
+    }
+  }
+
+  .section-4 {
+    margin: 50px auto 20px;
+    text-align: center;
+
+    label {
+      display: block;
+      margin-bottom: 20px;
+    }
+
+    textarea {
+      resize: none;
+    }
+  }
+
+  .section-5 {
+    text-align: center;
+  }
 }
