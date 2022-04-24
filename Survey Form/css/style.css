@@ -1,6 +1,6 @@
 /* stylelint-disable selector-class-pattern */
 :root {
-  font-size: 16px;
+  font-size: 10px;
 }
 
 *,
@@ -8,6 +8,11 @@
 *::before {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+html {
+  background: url("../img/background.png");
+  background-size: cover;
 }
 
 main {
@@ -25,8 +30,27 @@ main {
   width: 75%;
 }
 
-.intro {
+.survey {
+  background-color: #f5f5f5;
+  border-radius: 50px;
+  border: 10px inset #d5d5d7;
+  padding: 30px;
+  margin: 50px auto;
+}
+
+.survey-header {
   text-align: center;
+}
+
+.survey-header h1 {
+  font-family: "Russo One", sans-serif;
+  font-size: 5rem;
+  letter-spacing: 5px;
+}
+
+.survey-header p {
+  font-family: "Ropa Sans", sans-serif;
+  font-size: 2.5rem;
 }
 
 #survey-form {
@@ -48,13 +72,24 @@ main {
   gap: 10px;
 }
 
+#survey-form .section-1 legend {
+  font-family: "Russo One", sans-serif;
+  font-size: 2rem;
+}
+
+#survey-form .section-1 label,
+#survey-form .section-1 input {
+  font-family: "Ropa Sans", sans-serif;
+  font-size: 1.5rem;
+}
+
 #survey-form .section-1 .fieldset-1 {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
 }
 
-#survey-form .section-1 .fieldset-1 .fieldset-1__input {
+#survey-form .section-1 .fieldset-1__input {
   margin-bottom: 10px;
   width: 100%;
 }
@@ -96,8 +131,25 @@ main {
   height: 100px;
 }
 
+#survey-form .section-2 label {
+  font-family: "Russo One", sans-serif;
+  font-size: 2rem;
+}
+
+#survey-form .section-2 select {
+  font-family: "Ropa Sans", sans-serif;
+  font-size: 2rem;
+}
+
 #survey-form .section-3 p {
+  font-family: "Russo One", sans-serif;
+  font-size: 2rem;
   text-align: center;
+}
+
+#survey-form .section-3 label {
+  font-family: "Ropa Sans", sans-serif;
+  font-size: 2rem;
 }
 
 #survey-form .section-4 {
@@ -108,13 +160,22 @@ main {
 #survey-form .section-4 label {
   display: block;
   margin-bottom: 20px;
+  font-family: "Russo One", sans-serif;
+  font-size: 2rem;
 }
 
 #survey-form .section-4 textarea {
   resize: none;
+  font-family: "Ropa Sans", sans-serif;
+  font-size: 2rem;
 }
 
 #survey-form .section-5 {
   text-align: center;
+}
+
+#survey-form .section-5 button {
+  font-family: "Russo One", sans-serif;
+  font-size: 2rem;
 }
 /*# sourceMappingURL=style.css.map */

@@ -5,20 +5,29 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Font Russo One-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+  <!-- Font Ropa Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ropa+Sans&display=swap" rel="stylesheet">
+  <!-- CSS -->
   <link rel="stylesheet" href="css/style.css" />
   <title>Your MMO Survey</title>
 </head>
 
 <body>
   <main>
-    <!-- Introdução -->
-    <div class="intro">
-      <h1 id="title">GLOBAL MMO SURVEY</h1>
-      <br />
-      <p id="description">Tell us which MMO played a role in your life!</p>
-    </div>
+    <section class="survey">
+      <!-- Introdução -->
+      <div class="survey-header">
+        <h1 id="title">GLOBAL MMO SURVEY</h1>
+        <br />
+        <p id="description">Tell us which MMO played a role in your life!</p>
+      </div>
 
-    <section>
       <!-- Questionário -->
       <form id="survey-form" action="#" autocomplete="off">
 
@@ -104,7 +113,7 @@
             <label for="dropdown">You consider yourself as a...</label>
 
             <select name="dropdown" id="dropdown">
-              <option value="super-casual">Super Casual</option>
+              <option value="super-casual" class="t">Super Casual</option>
               <option value="casual">Casual</option>
               <option value="hardcore">Hardcore</option>
               <option value="no-life">No Life</option>
@@ -133,7 +142,7 @@
         </div>
 
         <div class="section-5">
-          <button  id="submit" type="submit" onclick="alert('Obrigado por participar!')">
+          <button id="submit" type="submit" onclick="alert('Obrigado por participar!')">
             Enviar
           </button>
         </div>

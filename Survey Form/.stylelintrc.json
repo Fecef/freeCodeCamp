@@ -57,7 +57,7 @@
     "at-rule-no-vendor-prefix": true,
     "no-irregular-whitespace": true,
     "no-unknown-animations": true,
-    "color-hex-case": "upper",
+    "color-hex-case": "lower",
     "function-comma-space-after": "always",
     "function-comma-space-before": "never",
     "function-max-empty-lines": 0,
