@@ -1,0 +1,83 @@
+:root {
+  font-size: 62.5%;
+}
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 1.6rem;
+}
+
+@media (min-width: 600px), (min-width: 900px) {
+  *,
+  *::after,
+  *::before {
+    font-size: 1.8rem;
+  }
+}
+
+@media (min-width: 1200px), (min-width: 1800px) {
+  *,
+  *::after,
+  *::before {
+    font-size: 2rem;
+  }
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  max-width: 1125px;
+  margin: 0 auto;
+}
+
+.container-fluid {
+  width: 100%;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.justify-content-end {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header {
+  position: fixed;
+  background-color: #b1b7fc;
+  padding: 0.75em;
+}
+
+.header .header-img {
+  width: 5em;
+}
+
+.header .nav-item {
+  list-style: none;
+}
+
+.header .nav-item .nav-link {
+  text-decoration: none;
+  margin: 0 1.5em;
+  color: #7579a7;
+  font-weight: 700;
+}
+
+.header .nav-item .nav-link:hover {
+  color: #232626;
+}
+/*# sourceMappingURL=style.css.map */

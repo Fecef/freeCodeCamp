@@ -1,0 +1,71 @@
+$tablet-portrait: "min-width: 600px";
+$table-landscape: "min-width: 900px";
+$desktop: "min-width: 1200px";
+$big-desktop: "min-width: 1800px";
+
+:root {
+  font-size: 62.5%;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  font-size: 1.6rem;
+
+  @media ($tablet-portrait), ($table-landscape) {
+    font-size: 1.8rem;
+  }
+
+  @media ($desktop), ($big-desktop) {
+    font-size: 2rem;
+  }
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  max-width: 1125px;
+  margin: 0 auto;
+}
+
+.container-fluid {
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.justify-content-end {
+  justify-content: space-between;
+}
+
+.header {
+  position: fixed;
+  background-color: #b1b7fc;
+  padding: 0.75em;
+
+  .header-img {
+    width: 5em;
+  }
+
+  .nav-item {
+    list-style: none;
+
+    .nav-link {
+      text-decoration: none;
+      margin: 0 1.5em;
+      color: #7579a7;
+      font-weight: 700;
+
+      &:hover {
+        color: #232626;
+      }
+    }
+  }
+}
