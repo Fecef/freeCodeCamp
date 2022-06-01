@@ -24,11 +24,18 @@ $big-desktop: "min-width: 1800px";
 
 body {
   margin: 0;
+  background-color: #145369;
 }
 
 .container {
   max-width: 1125px;
   margin: 0 auto;
+}
+
+.container-header {
+  max-width: 1550px;
+  margin: 0 auto;
+  padding: 0 4em;
 }
 
 .container-fluid {
@@ -41,17 +48,30 @@ body {
   align-items: center;
 }
 
-.justify-content-end {
+.d-col {
+  flex-direction: column;
+  gap: 1.2em;
+}
+
+.justify-content-between {
   justify-content: space-between;
 }
 
+// HTML
+
 .header {
-  position: fixed;
-  background-color: #b1b7fc;
+  // position: fixed;
   padding: 0.75em;
 
   .header-img {
-    width: 5em;
+    width: 3.7em;
+    margin-right: 1.2em;
+  }
+
+  .logo-text {
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.5em;
   }
 
   .nav-item {
@@ -60,11 +80,40 @@ body {
     .nav-link {
       text-decoration: none;
       margin: 0 1.5em;
-      color: #7579a7;
+      color: #fff;
       font-weight: 700;
 
       &:hover {
-        color: #232626;
+        color: #ff0003;
+      }
+    }
+  }
+}
+
+main {
+  .main-h1 {
+    color: #fff;
+    font-size: 3rem;
+  }
+
+  #form {
+    width: 15em;
+
+    .email {
+      width: 100%;
+      padding: 0.333em;
+      font-size: 1.5rem;
+    }
+
+    .btn {
+      background-color: #d4b483;
+      border: none;
+      color: #2a241a;
+      font-weight: 700;
+      padding: 0.2em 1.2em;
+
+      &:hover {
+        background-color: #7f6c4e;
       }
     }
   }

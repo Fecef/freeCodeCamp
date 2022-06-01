@@ -1,44 +1,63 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="_css/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Landing Page</title>
-  <link rel="stylesheet" href="_css/style.css" />
-</head>
+  <body>
+    <header id="header" class="header container-fluid">
+      <div class="row container-header justify-content-between">
+        <div class="logo row">
+          <img
+            id="header-img"
+            class="header-img"
+            src="_img/red-dragon.png"
+            alt="Logo"
+          />
+          <p class="logo-text">Taverna do Dragão</p>
+        </div>
 
-<body>
-  <header id="header" class="header container-fluid">
-    <div class="container">
-      <nav id="nav-bar" class="row justify-content-end">
-        <!-- IMG From: https://www.holidaypng.com/png/transparent-purple-party-hat-for-halloween-7asyxb/ -->
-        <a class="nav-link">
-          <img id="header-img" class="header-img" src="_img/red-dragon.png" alt="Logo" />
-        </a>
+        <nav id="nav-bar" class="row justify-content-end">
+          <ul class="row">
+            <li class="nav-item">
+              <a class="nav-link" href="#sec1">Feature</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#sec2">How it Works</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#sec3">Price</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-        <ul class="navbar-nav row">
-          <li class="nav-item"><a class="nav-link" href="">HOME</a></li>
-          <li class="nav-item"><a class="nav-link" href="">PRODUTOS</a></li>
-          <li class="nav-item"><a class="nav-link" href="">CONTATO</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <!-- <main>
-    <video id="video" controls src="">
+    <main class="container row d-col">
+      <h1 class="main-h1">Handcrafted, home-made masterpieces</h1>
+      <form id="form" class="row d-col" action="#" method="get">
+        <input
+          class="email"
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Enter you email address"
+        />
+        <input class="btn" type="submit" value="GET STARTED" />
+      </form>
+    </main>
+    
+    <!-- <video id="video" controls src="">
       Sorry, your browser doesn't support
     </video>
 
     <form id="form" action="https://www.freecodecamp.com/email-submit">
       <input id="email" type="email" name="email" placeholder="Email" />
       <button id="submit" type="submit">Enviar</button>
-    </form>
+    </form> -->
   </main> -->
-
-  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-</body>
-
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
 </html>
