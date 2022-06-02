@@ -24,7 +24,7 @@
         <nav id="nav-bar" class="row justify-content-end">
           <ul class="row">
             <li class="nav-item">
-              <a class="nav-link" href="#sec1">Feature</a>
+              <a class="nav-link" href="#feature">Feature</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#sec2">How it Works</a>
@@ -52,10 +52,10 @@
         </form>
       </div>
 
-      <section class="main-middle">
-        <div class="main-middle-content row">
+      <section id="feature" class="main-feature">
+        <div class="main-feature-content row">
           <img
-            class="main-middle__icon"
+            class="main-feature__icon"
             src="_img/bandeira-de-corrida.png"
             alt="Bandeira de Largada"
           />
@@ -68,8 +68,8 @@
           </div>
         </div>
 
-        <div class="main-middle-content row">
-          <img class="main-middle__icon" src="_img/trofeu.png" alt="Troféu" />
+        <div class="main-feature-content row">
+          <img class="main-feature__icon" src="_img/trofeu.png" alt="Troféu" />
           <div>
             <h2>Premium Materials</h2>
             <p>
@@ -79,8 +79,8 @@
           </div>
         </div>
 
-        <div class="main-middle-content row">
-          <img class="main-middle__icon" src="_img/incendio.png" alt="Fogo" />
+        <div class="main-feature-content row">
+          <img class="main-feature__icon" src="_img/incendio.png" alt="Fogo" />
           <div>
             <h2>Premium Materials</h2>
             <p>
@@ -90,7 +90,74 @@
           </div>
         </div>
       </section>
+
+      <section class="main-video">
+        <video id="video" width="560" height="315" controls>
+          <source src="_video/Elden Wrong.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </section>
+
+      <section class="main-prices row">
+        <div class="main-prices-content">
+          <div class="main-prices-content-header">
+            <strong>TENOR TROMBONE</strong>
+          </div>
+
+          <div class="main-prices-content-body">
+            <h3 class="main-prices-content-body-h3">$600</h3>
+            <ul class="main-prices-content-body-ul">
+              <li>Lorem ipsum.</li>
+              <li>Lorem ipsum.</li>
+              <li>Lorem ipsum dolor.</li>
+              <li>Lorem ipsum.</li>
+            </ul>
+
+            <button class="main-prices-content-body__button">SELECT</button>
+          </div>
+        </div>
+
+        <div class="main-prices-content">
+          <div class="main-prices-content-header">
+            <strong>BASS TROMBONE</strong>
+          </div>
+
+          <div class="main-prices-content-body">
+            <h3 class="main-prices-content-body-h3">$900</h3>
+            <ul class="main-prices-content-body-ul">
+              <li>Lorem ipsum.</li>
+              <li>Lorem ipsum.</li>
+              <li>Lorem ipsum dolor.</li>
+              <li>Lorem ipsum.</li>
+            </ul>
+
+            <button class="main-prices-content-body__button">SELECT</button>
+          </div>
+        </div>
+
+        <div class="main-prices-content">
+          <div class="main-prices-content-header">
+            <strong>VALVE TROMBONE</strong>
+          </div>
+
+          <div class="main-prices-content-body">
+            <h3 class="main-prices-content-body-h3">$1200</h3>
+            <ul class="main-prices-content-body-ul">
+              <li>Lorem ipsum.</li>
+              <li>Lorem ipsum.</li>
+              <li>Lorem ipsum dolor.</li>
+              <li>Lorem ipsum.</li>
+            </ul>
+
+            <button class="main-prices-content-body__button">SELECT</button>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <footer class="footer">
+      <p>teste</p>
+    </footer>
 
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   </body>

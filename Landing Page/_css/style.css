@@ -71,6 +71,7 @@ body {
 }
 
 .header {
+  position: fixed;
   padding: 0.75em;
 }
 
@@ -102,6 +103,7 @@ body {
 main .main-h1 {
   color: #fff;
   font-size: 3rem;
+  margin-top: 5em;
 }
 
 main #form {
@@ -127,16 +129,75 @@ main #form .btn:hover {
   background-color: #7f6c4e;
 }
 
-main .main-middle {
+main .main-feature {
   width: 45em;
   margin: 5em auto;
 }
 
-main .main-middle .main-middle-content {
+main .main-feature .main-feature-content {
   gap: 4em;
 }
 
-main .main-middle .main-middle__icon {
+main .main-feature .main-feature__icon {
   width: 4em;
+}
+
+main .main-video {
+  text-align: center;
+}
+
+main .main-prices {
+  margin: 6em auto;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1.5em;
+}
+
+main .main-prices .main-prices-content {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border: 1px solid #120000;
+  background-color: #f7e6e6;
+}
+
+main .main-prices .main-prices-content .main-prices-content-header {
+  background-color: #d98080;
+  color: #120000;
+  padding: 1em 0;
+}
+
+main .main-prices .main-prices-content .main-prices-content-body {
+  padding: 0.5em 2em;
+  color: #120000;
+}
+
+main .main-prices .main-prices-content .main-prices-content-body .main-prices-content-body-h3 {
+  font-size: 4rem;
+  margin: 0.5em;
+}
+
+main .main-prices .main-prices-content .main-prices-content-body .main-prices-content-body-ul {
+  list-style-type: none;
+  padding-right: 1.6em;
+}
+
+main .main-prices .main-prices-content .main-prices-content-body .main-prices-content-body__button {
+  background-color: #d4b483;
+  border: none;
+  color: #2a241a;
+  font-weight: 700;
+  padding: 0.2em 1.2em;
+  margin: 1em;
+}
+
+main .main-prices .main-prices-content .main-prices-content-body .main-prices-content-body__button:hover {
+  background-color: #7f6c4e;
+}
+
+.footer {
+  background-color: #d4b483;
 }
 /*# sourceMappingURL=style.css.map */
