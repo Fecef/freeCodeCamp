@@ -1,3 +1,4 @@
+/* stylelint-disable selector-class-pattern */
 :root {
   font-size: 62.5%;
 }
@@ -28,6 +29,7 @@
 
 body {
   margin: 0;
+  color: #fff;
   background-color: #145369;
 }
 
@@ -50,8 +52,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -62,7 +62,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 1.2em;
 }
 
 .justify-content-between {
@@ -81,7 +80,6 @@ body {
 }
 
 .header .logo-text {
-  color: #fff;
   font-weight: 700;
   font-size: 1.5em;
 }
@@ -108,6 +106,7 @@ main .main-h1 {
 
 main #form {
   width: 15em;
+  gap: 1.2em;
 }
 
 main #form .email {
@@ -126,5 +125,18 @@ main #form .btn {
 
 main #form .btn:hover {
   background-color: #7f6c4e;
+}
+
+main .main-middle {
+  width: 45em;
+  margin: 5em auto;
+}
+
+main .main-middle .main-middle-content {
+  gap: 4em;
+}
+
+main .main-middle .main-middle__icon {
+  width: 4em;
 }
 /*# sourceMappingURL=style.css.map */

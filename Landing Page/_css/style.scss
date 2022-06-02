@@ -1,3 +1,4 @@
+/* stylelint-disable selector-class-pattern */
 $tablet-portrait: "min-width: 600px";
 $table-landscape: "min-width: 900px";
 $desktop: "min-width: 1200px";
@@ -24,6 +25,7 @@ $big-desktop: "min-width: 1800px";
 
 body {
   margin: 0;
+  color: #fff;
   background-color: #145369;
 }
 
@@ -44,13 +46,11 @@ body {
 
 .row {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
 }
 
 .d-col {
   flex-direction: column;
-  gap: 1.2em;
 }
 
 .justify-content-between {
@@ -69,7 +69,6 @@ body {
   }
 
   .logo-text {
-    color: #fff;
     font-weight: 700;
     font-size: 1.5em;
   }
@@ -98,6 +97,7 @@ main {
 
   #form {
     width: 15em;
+    gap: 1.2em;
 
     .email {
       width: 100%;
@@ -115,6 +115,19 @@ main {
       &:hover {
         background-color: #7f6c4e;
       }
+    }
+  }
+
+  .main-middle {
+    width: 45em;
+    margin: 5em auto;
+
+    .main-middle-content {
+      gap: 4em;
+    }
+
+    .main-middle__icon {
+      width: 4em;
     }
   }
 }
