@@ -24,12 +24,12 @@
         <nav id="nav-bar" class="row justify-content-end">
           <ul class="row">
             <li class="nav-item">
-              <a class="nav-link" href="#feature">Feature</a>
+              <a class="nav-link" href="#main-video">Feature</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#sec2">How it Works</a>
+              <a class="nav-link" href="#main-feature">How it Works</a>
             </li>
-            <li class="nav-item"><a class="nav-link" href="#sec3">Price</a></li>
+            <li class="nav-item"><a class="nav-link" href="#main-prices">Price</a></li>
           </ul>
         </nav>
       </div>
@@ -48,11 +48,11 @@
             placeholder="Enter you email address"
             autocomplete="off"
           />
-          <input class="btn" type="submit" value="GET STARTED" />
+          <input id="submit" class="btn" type="submit" value="GET STARTED" />
         </form>
       </div>
 
-      <section id="feature" class="main-feature">
+      <section id="main-feature" class="main-feature">
         <div class="main-feature-content row">
           <img
             class="main-feature__icon"
@@ -71,10 +71,10 @@
         <div class="main-feature-content row">
           <img class="main-feature__icon" src="_img/trofeu.png" alt="Troféu" />
           <div>
-            <h2>Premium Materials</h2>
+            <h2>Fast Shipping</h2>
             <p>
-              Our trombones use the shiniest brass which is sourced locally.
-              This will increase the longevity of your purchase.
+              We make sure you recieve your trombone as soon as we have finished
+              making it. We also provide free returns if you are not satisfied.
             </p>
           </div>
         </div>
@@ -82,23 +82,23 @@
         <div class="main-feature-content row">
           <img class="main-feature__icon" src="_img/incendio.png" alt="Fogo" />
           <div>
-            <h2>Premium Materials</h2>
+            <h2>Quality Assurance</h2>
             <p>
-              Our trombones use the shiniest brass which is sourced locally.
-              This will increase the longevity of your purchase.
+              For every purchase you make, we will ensure there are no damages
+              or faults and we will check and test the pitch of your instrument.
             </p>
           </div>
         </div>
       </section>
 
-      <section class="main-video">
+      <section id="main-video" class="main-video">
         <video id="video" width="560" height="315" controls>
           <source src="_video/Elden Wrong.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </section>
 
-      <section class="main-prices row">
+      <section id="main-prices" class="main-prices row">
         <div class="main-prices-content">
           <div class="main-prices-content-header">
             <strong>TENOR TROMBONE</strong>
@@ -156,14 +156,14 @@
     </main>
 
     <footer class="footer">
-      <ul class="links row">
-        <li>
+      <ul class="list row">
+        <li class="list-item">
           <a><strong>Privacy</strong></a>
         </li>
-        <li>
+        <li class="list-item">
           <a><strong>Terms</strong></a>
         </li>
-        <li>
+        <li class="list-item">
           <a><strong>Contact</strong></a>
         </li>
       </ul>

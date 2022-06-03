@@ -190,16 +190,22 @@ main {
   color: #2a241a;
   padding: 0.5em 1em;
 
-  .links {
+  .list {
     list-style-type: none;
-    justify-content: end;
+    justify-content: center;
+    padding-left: 0;
+
+    .list-item {
+      margin: auto 0.2em;
+    }
   }
 
   .copyright-div {
-    justify-content: end;
+    justify-content: center;
 
     .copyright {
       font-size: 1.4rem;
+      margin-bottom: 1em;
     }
   }
 }

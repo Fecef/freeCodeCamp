@@ -7,11 +7,13 @@
 *::after,
 *::before {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-size: 1.6rem;
 }
 
-@media (min-width: 600px), (min-width: 900px) {
+@media (min-width: 600px),
+(min-width: 900px) {
+
   *,
   *::after,
   *::before {
@@ -19,7 +21,9 @@
   }
 }
 
-@media (min-width: 1200px), (min-width: 1800px) {
+@media (min-width: 1200px),
+(min-width: 1800px) {
+
   *,
   *::after,
   *::before {
@@ -53,21 +57,21 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .d-col {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .justify-content-between {
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .header {
@@ -151,8 +155,8 @@ main .main-prices {
   margin: 6em auto;
   text-align: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   gap: 1.5em;
 }
 
@@ -204,20 +208,27 @@ main .main-prices .main-prices-content .main-prices-content-body .main-prices-co
   padding: 0.5em 1em;
 }
 
-.footer .links {
+.footer .list {
   list-style-type: none;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-left: 0;
+}
+
+.footer .list .list-item {
+  margin: auto 0.2em;
 }
 
 .footer .copyright-div {
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .footer .copyright-div .copyright {
   font-size: 1.4rem;
+  margin-bottom: 1em;
 }
+
 /*# sourceMappingURL=style.css.map */
