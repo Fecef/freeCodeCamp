@@ -1,2 +1,2 @@
 # freeCodeCamp
-freeCodeCamp HTML/CSS Projects
+Lista de desafios do freeCodeCamp para emissão de certificado de Responsive Web Design.
