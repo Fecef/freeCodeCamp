@@ -73,6 +73,7 @@ body {
 .header {
   position: fixed;
   padding: 0.75em;
+  background-color: #145369;
 }
 
 .header .header-img {
@@ -199,5 +200,24 @@ main .main-prices .main-prices-content .main-prices-content-body .main-prices-co
 
 .footer {
   background-color: #d4b483;
+  color: #2a241a;
+  padding: 0.5em 1em;
+}
+
+.footer .links {
+  list-style-type: none;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.footer .copyright-div {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.footer .copyright-div .copyright {
+  font-size: 1.4rem;
 }
 /*# sourceMappingURL=style.css.map */

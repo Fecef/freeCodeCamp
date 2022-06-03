@@ -62,6 +62,7 @@ body {
 .header {
   position: fixed;
   padding: 0.75em;
+  background-color: #145369;
 
   .header-img {
     width: 3.7em;
@@ -186,4 +187,19 @@ main {
 
 .footer {
   background-color: #d4b483;
+  color: #2a241a;
+  padding: 0.5em 1em;
+
+  .links {
+    list-style-type: none;
+    justify-content: end;
+  }
+
+  .copyright-div {
+    justify-content: end;
+
+    .copyright {
+      font-size: 1.4rem;
+    }
+  }
 }
