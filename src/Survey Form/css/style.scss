@@ -1,0 +1,161 @@
+$font-russo-one: "Russo One", sans-serif;
+$font-ropa-sans: "Ropa Sans", sans-serif;
+
+/* stylelint-disable selector-class-pattern */
+:root {
+  font-size: 10px;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  background: url("../img/background.png");
+  background-size: cover;
+}
+
+main {
+  max-width: 978px;
+  margin: 0 auto;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+}
+
+.survey {
+  background-color: #f5f5f5;
+  border-radius: 50px;
+  border: 10px inset #d5d5d7;
+  padding: 30px;
+  margin: 50px auto;
+}
+
+.survey-header {
+  text-align: center;
+
+  h1 {
+    font-family: $font-russo-one;
+    font-size: 5rem;
+    letter-spacing: 5px;
+  }
+
+  p {
+    font-family: $font-ropa-sans;
+    font-size: 2.5rem;
+  }
+}
+
+#survey-form {
+  width: 80%;
+  margin: 50px auto;
+
+  .section-1 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 10px;
+
+    legend {
+      font-family: $font-russo-one;
+      font-size: 2rem;
+    }
+
+    label,
+    input {
+      font-family: $font-ropa-sans;
+      font-size: 1.5rem;
+    }
+
+    .fieldset-1 {
+      flex-grow: 1;
+    }
+
+    .fieldset-1__input {
+      margin-bottom: 10px;
+      width: 100%;
+    }
+
+    .fieldset-2 {
+      flex-grow: 1;
+
+      .favorite-mmo {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-items: center;
+        height: 100px;
+      }
+    }
+  }
+
+  .section-2,
+  .section-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+    height: 100px;
+  }
+
+  .section-2 {
+    label {
+      font-family: $font-russo-one;
+      font-size: 2rem;
+    }
+
+    select {
+      font-family: $font-ropa-sans;
+      font-size: 2rem;
+    }
+  }
+
+  .section-3 {
+    p {
+      font-family: $font-russo-one;
+      font-size: 2rem;
+      text-align: center;
+    }
+
+    label {
+      font-family: $font-ropa-sans;
+      font-size: 2rem;
+    }
+  }
+
+  .section-4 {
+    margin: 50px auto 20px;
+    text-align: center;
+
+    label {
+      display: block;
+      margin-bottom: 20px;
+      font-family: $font-russo-one;
+      font-size: 2rem;
+    }
+
+    textarea {
+      resize: none;
+      font-family: $font-ropa-sans;
+      font-size: 2rem;
+    }
+  }
+
+  .section-5 {
+    text-align: center;
+
+    button {
+      font-family: $font-russo-one;
+      font-size: 2rem;
+    }
+  }
+}

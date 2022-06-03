@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="_css/style.css" />
+  </head>
+
+  <body>
+    <header id="header" class="header container-fluid">
+      <div class="row container-header justify-content-between">
+        <div class="logo row">
+          <img
+            id="header-img"
+            class="header-img"
+            src="_img/red-dragon.png"
+            alt="Logo"
+          />
+          <p class="logo-text">Taverna do Dragão</p>
+        </div>
+
+        <nav id="nav-bar" class="row justify-content-end">
+          <ul class="row">
+            <li class="nav-item">
+              <a class="nav-link" href="#main-video">Feature</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#main-feature">How it Works</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#main-prices">Price</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <div class="main-upper row d-col">
+        <h1 class="main-h1">Handcrafted, home-made masterpieces</h1>
+
+        <form id="form" class="row d-col" action="#" method="get">
+          <input
+            class="email"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter you email address"
+            autocomplete="off"
+          />
+          <input id="submit" class="btn" type="submit" value="GET STARTED" />
+        </form>
+      </div>
+
+      <section id="main-feature" class="main-feature">
+        <div class="main-feature-content row">
+          <img
+            class="main-feature__icon"
+            src="_img/bandeira-de-corrida.png"
+            alt="Bandeira de Largada"
+          />
+          <div>
+            <h2>Premium Materials</h2>
+            <p>
+              Our trombones use the shiniest brass which is sourced locally.
+              This will increase the longevity of your purchase.
+            </p>
+          </div>
+        </div>
+
+        <div class="main-feature-content row">
+          <img class="main-feature__icon" src="_img/trofeu.png" alt="Troféu" />
+          <div>
+            <h2>Fast Shipping</h2>
+            <p>
+              We make sure you recieve your trombone as soon as we have finished
+              making it. We also provide free returns if you are not satisfied.
+            </p>
+          </div>
+        </div>
+
+        <div class="main-feature-content row">
+          <img class="main-feature__icon" src="_img/incendio.png" alt="Fogo" />
+          <div>
+            <h2>Quality Assurance</h2>
+            <p>
+              For every purchase you make, we will ensure there are no damages
+              or faults and we will check and test the pitch of your instrument.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="main-video" class="main-video">
+        <video id="video" width="560" height="315" controls>
+          <source src="_video/Elden Wrong.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </section>
+
+      <section id="main-prices" class="main-prices row">
+        <div class="main-prices-content">
+          <div class="main-prices-content-header">
+            <strong>TENOR TROMBONE</strong>
+          </div>
+
+          <div class="main-prices-content-body">
+            <h3 class="main-prices-content-body-h3">$600</h3>
+            <ul class="main-prices-content-body-ul">
+              <li>Lorem ipsum.</li>
+              <li>Lorem ipsum.</li>
+              <li>Lorem ipsum dolor.</li>
+              <li>Lorem ipsum.</li>
+            </ul>
+
+            <button class="main-prices-content-body__button">SELECT</button>
+          </div>
+        </div>
+
+        <div class="main-prices-content">
+          <div class="main-prices-content-header">
+            <strong>BASS TROMBONE</strong>
+          </div>
+
+          <div class="main-prices-content-body">
+            <h3 class="main-prices-content-body-h3">$900</h3>
+            <ul class="main-prices-content-body-ul">
+              <li>Lorem ipsum.</li>
+              <li>Lorem ipsum.</li>
+              <li>Lorem ipsum dolor.</li>
+              <li>Lorem ipsum.</li>
+            </ul>
+
+            <button class="main-prices-content-body__button">SELECT</button>
+          </div>
+        </div>
+
+        <div class="main-prices-content">
+          <div class="main-prices-content-header">
+            <strong>VALVE TROMBONE</strong>
+          </div>
+
+          <div class="main-prices-content-body">
+            <h3 class="main-prices-content-body-h3">$1200</h3>
+            <ul class="main-prices-content-body-ul">
+              <li>Lorem ipsum.</li>
+              <li>Lorem ipsum.</li>
+              <li>Lorem ipsum dolor.</li>
+              <li>Lorem ipsum.</li>
+            </ul>
+
+            <button class="main-prices-content-body__button">SELECT</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <ul class="list row">
+        <li class="list-item">
+          <a><strong>Privacy</strong></a>
+        </li>
+        <li class="list-item">
+          <a><strong>Terms</strong></a>
+        </li>
+        <li class="list-item">
+          <a><strong>Contact</strong></a>
+        </li>
+      </ul>
+
+      <div class="copyright-div row">
+        <small class="copyright">Copyright 2016, Original Trombones</small>
+      </div>
+    </footer>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>

@@ -1,0 +1,64 @@
+header {
+    padding: 1vw;
+    text-align: center;
+}
+
+h2, h3 {
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+ul {
+    margin-top: 4vh;
+    margin-bottom: 5vh;
+}
+
+strong {
+    color: yellow;
+}
+
+li {
+    max-width: 50rem;
+    margin: auto auto 1rem auto;
+}
+
+blockquote {
+    font-style: italic;
+    max-width: 50rem;
+    margin: auto;
+    margin-bottom: 2rem;
+}
+
+#title {
+    font-size: 3rem;
+}
+
+#main {
+    color: white;
+    background-color: #191919;
+    border-radius: 1vw;
+    padding: 0 1rem 0 1rem;
+}
+
+#img-div {
+    background-color: white;
+    margin: 1vw;
+    padding: 1vw;
+}
+
+#image {
+    display: block;
+    max-width: 100%;
+    margin: auto;
+}
+
+#img-caption {
+    text-align: center;
+    margin-top: 1rem;
+    color: black;
+}
+
+#tribute-info {
+    display: block;
+}
