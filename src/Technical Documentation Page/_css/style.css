@@ -1,4 +1,49 @@
 :root {
   font-size: 62.5%;
 }
+
+body {
+  font-family: monospace;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (min-width: 800px) {
+  .row {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.main-doc {
+  padding: 1em 1.5em;
+  font-size: 1.5rem;
+}
+
+.main-doc .main-section .header {
+  font-size: 2.8rem;
+}
+
+.main-doc .main-section .content {
+  color: #4d4e53;
+  margin: 1em;
+}
+
+.main-doc .main-section .content .code {
+  display: block;
+  background-color: #f7f7f7;
+  font-size: 1.2rem;
+  margin: auto -20px;
+  padding: 1em 1.5em;
+}
 /*# sourceMappingURL=style.css.map */

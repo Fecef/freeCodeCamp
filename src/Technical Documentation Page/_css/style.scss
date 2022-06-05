@@ -2,3 +2,39 @@
   font-size: 62.5%;
 }
 
+body {
+  font-family: monospace;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: 800px) {
+    flex-direction: row;
+  }
+}
+
+.main-doc {
+  padding: 1em 1.5em;
+  font-size: 1.5rem;
+
+  .main-section {
+    .header {
+      font-size: 2.8rem;
+    }
+
+    .content {
+      color: #4d4e53;
+      margin: 1em;
+
+      .code {
+        display: block;
+        background-color: #f7f7f7;
+        font-size: 1.2rem;
+        margin: auto -20px;
+        padding: 1em 1.5em;
+      }
+    }
+  }
+}
