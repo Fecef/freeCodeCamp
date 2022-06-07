@@ -1,1 +1,31 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+.navbar {
+  background-color: #be3144;
+  padding: 1em 0;
+}
+
+.navbar .nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  list-style-type: none;
+}
+
+.navbar .nav-list .nav-item {
+  margin: auto 1em;
+}
+
+.navbar .nav-list .nav-item > a {
+  color: #fff;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,26 @@
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+.navbar {
+  background-color: #be3144;
+  padding: 1em 0;
+
+  .nav-list {
+    display: flex;
+    justify-content: end;
+    list-style-type: none;
+
+    .nav-item {
+      margin: auto 1em;
+    }
+
+    .nav-item > a {
+      color: #fff;
+    }
+  }
+}
