@@ -1,83 +1,140 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Personal Portfolio Page</title>
-    <link
-      rel="stylesheet"
-      href="../../node_modules/normalize.css/normalize.css"
-    />
-    <link rel="stylesheet" href="_css/style.css" />
-  </head>
 
-  <body>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Portfolio Page</title>
+  <link rel="stylesheet" href="../../node_modules/normalize.css/normalize.css" />
+  <link rel="stylesheet" href="_css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+</head>
+
+<body>
+
+  <header>
     <!-- Navbar -->
     <nav class="navbar" id="navbar">
-      <ul class="nav-list">
+      <menu class="nav-list">
         <li class="nav-item">
           <a class="nav-link" href="#welcome-section">About</a>
         </li>
-        <li class="nav-item"><a class="nav-link" href="#projects">Work</a></li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">Work</a>
+        </li>
         <li class="nav-item">
           <a class="nav-link" href="#contacts">Contact</a>
         </li>
-      </ul>
+      </menu>
     </nav>
+  </header>
 
+  <main>
     <!-- Welcome Section -->
-    <section id="welcome-section">
+    <section class="welcome-section" id="welcome-section">
       <h1>Hey I am Mimic</h1>
-      <p>a web devoloper</p>
+      <p><em>a web devoloper</em></p>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects">
-      <h2 class="project-tile">There are some of my projects</h2>
+    <section class="projects" id="projects">
+      <div class="project-wrapper container">
+        <h2 class="project-tile">There are some of my projects</h2>
 
-      <div class="projects-grid">
-        <a href="../Tribute Page/index.html">Tribute Page</a>
+        <div class="projects-grid">
+          <a href="../Tribute Page/index.html" class="card">
+            <img class="img" src="_img/tribute.jpg" alt="Tribute Page">
+            <p class="link"><span class="code">
+                < </span>Tribute Page <span class="code"> /></span></p>
+          </a>
+
+          <a href="../Tribute Page/index.html" class="card">
+            <img class="img" src="_img/random-quote-machine.png" alt="Tribute Page">
+            <p class="link"><span class="code">
+                < </span>Random Quote Machine<span class="code"> /></span></p>
+          </a>
+
+          <a href="../Tribute Page/index.html" class="card">
+            <img class="img" src="_img/calc.png" alt="Tribute Page">
+            <p class="link"><span class="code">
+                < </span>JavaScript Calculator <span class="code"> /></span></p>
+          </a>
+
+          <a href="../Tribute Page/index.html" class="card">
+            <img class="img" src="_img/map.jpg" alt="Tribute Page">
+            <p class="link"><span class="code">
+                < </span>Mapa Data Across the Globe <span class="code"> /></span></p>
+          </a>
+
+          <a href="../Tribute Page/index.html" class="card">
+            <img class="img" src="_img/wiki.png" alt="Tribute Page">
+            <p class="link"><span class="code">
+                < </span>Wikpedia Viewer <span class="code"> /></span></p>
+          </a>
+
+          <a href="../Tribute Page/index.html" class="card">
+            <img class="img" src="_img/tic-tac-toe.png" alt="Tribute Page">
+            <p class="link"><span class="code">
+                < </span>Tic Tac Toe Game<span class="code"> /></span></p>
+          </a>
+        </div>
+
+        <a class="show-all" href="#">Show all <i class="fa-solid fa-angle-right"></i></a>
       </div>
-
-      <a href="#">Show all</a>
     </section>
 
     <!-- Contacts Section -->
-    <section id="contacts">
-      <h2>Let's work together</h2>
-      <p>hHow do you take your coffee?</p>
+    <section class="contacts" id="contacts container">
+      <h2>Let's work together...</h2>
+      <p><em>How do you take your coffee?</em></p>
 
       <ul>
         <li>
-          <a id="profile-link" href="https://github.com/Fecef" target="_blank"
-            >GitHub</a
-          >
+          <a class="social-media-link" id="facebook-link" href="#"><i
+              class="fa-brands fa-facebook-square"></i>Facebook</a>
         </li>
         <li>
-          <a id="email-link" href="mailto:fecef.figueiredo@gmail.com">E-mail</a>
+          <a class="social-media-link" id="profile-link" href="https://github.com/Fecef" target="_blank"><i
+              class="fa-brands fa-github"></i>GitHub</a>
         </li>
         <li>
-          <a
-            id="whatsapp-link"
-            href="https://web.whatsapp.com/send/?phone=5511945455167"
-            >Whatsapp</a
-          >
+          <a class="social-media-link" id="twitter-link" href="#"><i class="fa-brands fa-twitter"></i>Twitter</a>
+        </li>
+        <li>
+          <a class="social-media-link" id="email-link" href="mailto:fecef.figueiredo@gmail.com"><i
+              class="fa-solid fa-at"></i>Send a mail</a>
+        </li>
+        <li>
+          <a class="social-media-link" id="whatsapp-link" href="https://web.whatsapp.com/send/?phone=5511945455167"><i
+              class="fa-solid fa-mobile-screen-button"></i>Call Me</a>
         </li>
       </ul>
     </section>
+  </main>
 
-    <!-- Footer -->
-    <footer>
+  <!-- Footer -->
+  <footer>
+    <section class="copyrights">
       <p>
         **This is just a fake portfolio. All the projects and contact details
         given are not real.
       </p>
       <p>
-        ©Created by <a href="https://github.com/Fecef">Fecef</a> - Web Developer
+        © Created by <strong><a class="fecef" href="https://github.com/Fecef">Fecef</a></strong> - Web Developer
       </p>
-    </footer>
+    </section>
+  </footer>
 
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-  </body>
+  <script src="https://kit.fontawesome.com/467e3b33ce.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
 </html>

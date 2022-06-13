@@ -3,29 +3,309 @@
 }
 
 body {
-  font-size: 1.6rem;
+  color: #fff;
+  font-size: 2rem;
+  font-family: Poppins, sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: 900px) {
+  body {
+    font-size: 1.6rem;
+  }
+}
+
+p,
+h1,
+h2,
+menu {
+  margin: 0;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  background-color: #be3144;
+  -webkit-box-shadow: 0 1.2px 0 #252528;
+          box-shadow: 0 1.2px 0 #252528;
+}
+
+footer {
+  background-color: #303841;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top: 4px solid #be3144;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
 }
 
 .navbar {
-  background-color: #be3144;
-  padding: 1em 0;
-}
-
-.navbar .nav-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: end;
-  list-style-type: none;
+  max-width: 1850px;
+  margin: 0 auto;
+  height: 4.5em;
 }
 
-.navbar .nav-list .nav-item {
-  margin: auto 1em;
+.navbar .nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
+  list-style: none;
 }
 
 .navbar .nav-list .nav-item > a {
+  text-decoration: none;
+  font-size: 1.375em;
   color: #fff;
+  padding: 0.91em 0.8em;
+}
+
+.navbar .nav-list .nav-item > a:hover {
+  background-color: #45567d;
+}
+
+.welcome-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #252528;
+  background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+  gap: 1.5em;
+  height: 100vh;
+}
+
+.welcome-section h1 {
+  font-family: Raleway, sans-serif;
+  font-size: 3.74em;
+}
+
+.welcome-section p {
+  line-height: 1.4px;
+  font-size: 1.875em;
+  color: #be3144;
+}
+
+.projects {
+  background-color: #45567d;
+  padding: 5em 0;
+}
+
+.projects .project-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 3em;
+}
+
+.projects .project-tile {
+  text-align: center;
+  font-size: 2.4em;
+  font-family: Raleway, sans-serif;
+  border-bottom: 1px solid #fff;
+  width: 16.7em;
+  line-height: 1.5em;
+}
+
+.projects .projects-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 2.2em;
+}
+
+.projects .projects-grid .code {
+  opacity: 0%;
+  -webkit-transition-duration: 0.6s;
+          transition-duration: 0.6s;
+}
+
+.projects .projects-grid .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 25em;
+}
+
+.projects .projects-grid .card:hover .code {
+  opacity: 100%;
+  color: #ff7f50;
+}
+
+.projects .projects-grid .img {
+  height: 25em;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.projects .projects-grid .link {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.15em;
+  background-color: #303841;
+  padding: 1.5em;
+  text-align: center;
+}
+
+.projects .show-all {
+  display: inline-block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 1.3em;
+  background-color: #303841;
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5em 1em;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.projects .show-all:hover {
+  background-color: #be3144;
+}
+
+.projects .show-all:hover i {
+  -webkit-transform: translateX(0.15em);
+          transform: translateX(0.15em);
+}
+
+.projects .show-all i {
+  margin-left: 0.2em;
+  font-size: 1em;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #303841;
+  height: 80vh;
+  gap: 0.5em;
+}
+
+.contacts h2 {
+  font-family: Raleway, sans-serif;
+  font-size: 3.79em;
+}
+
+.contacts p {
+  font-size: 1.13em;
+}
+
+.contacts ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  gap: 2em;
+  margin-top: 2.7em;
+}
+
+.contacts ul li {
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.contacts ul li:hover {
+  -webkit-transform: translateY(0.5em);
+          transform: translateY(0.5em);
+}
+
+.contacts ul .social-media-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+
+.contacts ul .social-media-link i {
+  margin-right: 0.5em;
+}
+
+.copyrights {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.15em;
+  font-weight: 300;
+  width: 100%;
+  height: 5.8em;
+}
+
+.copyrights .fecef {
+  color: #fff;
+  text-decoration: none;
 }
 /*# sourceMappingURL=style.css.map */
